@@ -24,13 +24,13 @@
 
 
             <Button
-                android:text="Button"
+                android:text="Flt.Data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnHistoriaData" />
 
             <Button
-                android:text="Button"
+                android:text="Flt.Codi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnHisotrialCodi" />
