@@ -112,7 +112,7 @@ public class LlistaHistorial extends AppCompatActivity implements View.OnClickLi
             dataAGuardar = tv.getText().toString();
             String[] separated = dataAGuardar.split("/");
 
-            if (Integer.valueOf(separated[1]) < 10 && Integer.valueOf(separated[0]) < 10) {
+            /*if (Integer.valueOf(separated[1]) < 10 && Integer.valueOf(separated[0]) < 10) {
                 dataAGuardar = separated[2] + "0" + separated[1] + "0" + separated[0];
             } else {
                 if (Integer.valueOf(separated[1]) < 10) {
@@ -124,7 +124,8 @@ public class LlistaHistorial extends AppCompatActivity implements View.OnClickLi
                         dataAGuardar = separated[2] + separated[1] + separated[0];
                     }
                 }
-            }
+            }*/
+            dataAGuardar = separated[2] + separated[1] + separated[0];
             Cursor cursorTasks = comunicador.historicData(dataAGuardar);
 
             // Notifiquem al adapter que les dades han canviat i que refresqui
